@@ -1,0 +1,40 @@
+/* SmartBin.css */
+@keyframes leafAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.leaf {
+  background-image: url('path/to/your/leaf-image.png'); /* Replace with your leaf image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: leafAnimation 3s infinite ease-in-out;
+}
+
+.animate-leaf {
+  animation: leafAnimation 5s infinite alternate;
+}
+
+/* Optional: add a shimmer effect */
+.glitter-text {
+  background: linear-gradient(90deg, #ffd700, #ff6347, #ffd700);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: glitter 1.5s linear infinite;
+}
+
+@keyframes glitter {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
